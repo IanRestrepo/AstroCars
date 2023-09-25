@@ -1,13 +1,18 @@
+---
+import ThemeIcon from './ThemeIcon.astro';
+---
+
 <header
-  class="max-sm:hidden sticky top-0 w-full h-8vh flex justify-between items-center px-8% bg-slate-50"
+  class="max-sm:hidden sticky top-0 w-full h-8vh flex justify-between items-center px-8% "
 >
   <span class="font-semibold text-2xl">LOGO</span>
   <nav class="flex gap-8 font-semibold">
     <a href="#">Home</a>
     <a href="#">Recursos</a>
     <a href="#">About</a>
-  </nav>
-  <article class="flex gap-5">
+</nav>
+<article class="flex gap-5">
+      <ThemeIcon />
     <a href="#">redes</a>
     <a href="#">redes</a>
   </article>
@@ -17,6 +22,5 @@
   header {
     backdrop-filter: blur(10px) saturate(100%);
     -webkit-backdrop-filter: blur(10px) saturate(180%);
-    background-color: rgba(255, 255, 255, 0.2);
   }
 </style>
