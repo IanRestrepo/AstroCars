@@ -1,0 +1,23 @@
+---
+    import PriceButton from '../buttons/PriceButton.astro';
+
+    interface Props {
+        ProductName: string;
+        ProductBrand: string
+        ProductPrice: string;
+        ProductImage: any;
+    }
+
+    const { ProductName, ProductPrice, ProductImage, ProductBrand } = Astro.props;
+---
+
+<div class=" flex flex-col w-96 h-auto border-2 border-red-300 rounded-2xl">
+    <img src={ ProductImage } alt="Product Image" class="w-full h-auto">
+    <div class="flex flex-col justify-center items-center">
+        <h1 class="font-bold text-3xl">{ ProductName }</h3>
+        <em>{ ProductBrand }</em>
+        <strong class="font-bold text-3xl text-gray-800 py-5">${ ProductPrice }</strong>
+ 
+        <PriceButton Price={ProductPrice} />
+    </div>
+</div>
