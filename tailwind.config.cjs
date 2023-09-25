@@ -5,11 +5,15 @@ module.exports = {
     extend: {
       height: {
         "8vh": "8vh",
-		"92vh": "92vh",
+        "92vh": "92vh",
       },
       padding: {
         "8%": "8%",
+        '8vh': '8vh',
       },
+      width: {
+        '90%': '90%',
+      }
     },
   },
   plugins: [require("tailwindcss-animated")],

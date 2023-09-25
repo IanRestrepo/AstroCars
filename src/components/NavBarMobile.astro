@@ -1,0 +1,21 @@
+<header class="w-full  h-8vh mb-2">
+    <nav class="sticky w-90% rounded-md m-auto flex gap-10 justify-center items-center h-full bg-slate-950">
+        <a href="#"><img class="w-7" src="/images/home.svg" alt=""></a>
+        <a href="#"><img class="w-7" src="/images/projects.svg" alt=""></a>
+        <a href="#"><img class="w-7" src="/images/mas.svg" alt=""></a>
+    </nav>
+</header>
+
+<style>
+    header{
+        display: none;
+    }
+    @media (width < 640px) {
+        header{
+            display: flex;
+            position: absolute;
+            position: fixed;
+            bottom: 0;
+        }
+    }
+</style>
